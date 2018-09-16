@@ -1,0 +1,11 @@
+server:
+  port: 8080
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:2000/eureka
+management:
+  endpoints:
+     web:
+       exposure:
+          include: hytrix.stream
